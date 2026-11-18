@@ -1,0 +1,86 @@
+body {
+  background-color: #f5f6fa;
+}
+
+.app-card {
+  max-width: 760px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.title {
+  font-weight: 800;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.output {
+  min-height: 44px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.95rem;
+  color: #111827;
+  word-break: break-all;
+  background-color: #fff;
+}
+
+.output .placeholder-text {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.backspace-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+}
+
+.backspace-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 0.5rem;
+}
+
+.key {
+  aspect-ratio: 1 / 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #fff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #111827;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.key:hover {
+  background-color: #f3f4f6;
+}
+
+.key:focus-visible,
+.key:active {
+  outline: none;
+  border-color: #111827;
+}
+
+@media (max-width: 768px) {
+  .keys {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .keys {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
